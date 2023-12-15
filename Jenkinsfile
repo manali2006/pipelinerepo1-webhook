@@ -24,7 +24,7 @@ sh "service httpd start"
 }
 stage ("deploy") {
 steps {
-sh "cp -r /mnt/repo-3/pipelinerepo1-webhook/index.html /var/www/html"
+sh "cp -r /mnt/repo-1/pipelinerepo1-webhook/index.html /var/www/html"
 sh "chmod -R 777 /var/www/html/index.html"
 }
 }
